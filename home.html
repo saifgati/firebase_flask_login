@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <br/>
+      <div class="jumbotron">
+        <h1 class="display-4">Hey</h1>
+        <p class="lead">Welcome Home</p>
+        <hr class="my-4">
+          <form action="/home" method="post">
+            <div class="form-group">
+            <label for="exampleInputEmail1">Module code</label>
+            <input type="integer" class="form-control" name="code"  placeholder="Enter code">
+            </div>
+            <button type="submit" name="submit" class="btn btn-primary">Confirm</button>
+        </form>
+     </div>
+
+
+{% endblock %}
